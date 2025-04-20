@@ -497,7 +497,9 @@ footer p{
     }
 
 
-
+    .pop{
+        color: #707880;
+    }
     .pop1-1{
         display: none;
         transition: .3s ease-in-out;
