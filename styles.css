@@ -17,6 +17,9 @@ header{
     height: 100%;
     position: fixed;
 }
+.menu{
+    display: none;
+}
 
 nav{
     width: 100%;
