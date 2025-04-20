@@ -31,6 +31,9 @@ nav{
     align-items: center;
     gap: 40px;
 }
+.logo i{
+    display: none;
+}
 .nvt img{
     width: 30px;
 }
@@ -165,6 +168,7 @@ background: #dadddf46;;
     transition: all 0.3s ease;
     z-index: 9;
 }
+
 .incript1{
     justify-content: center;
     top: 10px;
@@ -235,10 +239,11 @@ background: #dadddf46;;
     gap: 15px;
     padding: 0 8px;
     transition: all 0.3s ease;
-    z-index: 9;
     visibility: hidden;
     opacity: 0;
     transition: all 0.3s ease;
+    z-index: 9;
+    
 }
 .resultat a{
     font-size: 13px;
@@ -360,4 +365,240 @@ footer p{
 
 .capt{
     font-weight: bold;
+}
+
+
+
+
+
+@media screen and (max-width:768px) {
+    main{
+        padding:100px 10px 0 10px ;
+    }
+    .box{
+        width: 100%;
+        padding: 10px;
+    }
+    .box H4{
+        font-size: 12px;
+    }
+    .box p{
+        font-size: 10px;
+        color: #707880;
+    }
+    
+    .bbt{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    button{
+        font-size: 10px;
+        padding:  5px 5px;
+        border: none;
+    }
+
+    .items{
+        display: none;
+    }
+
+    nav{
+        grid-template-columns: 50% 50%;    
+    }
+   
+    .logo {
+        justify-content: left;
+        padding: 0 0 0 30px;
+    }
+    .logo h4{
+        display: none;
+    }
+    .logo img{
+        width: 40px;
+    }
+    .icon{
+        justify-content: right;
+        padding: 0 30px;
+    }
+
+    .logo i{
+        display: block;
+        color: #c6cdd3af;
+        font-size: 20px;
+    }
+    .icon-up{
+        right: 40px;
+    }
+
+
+    .navgt{
+        display: none;
+    }
+
+    footer{
+        padding: 20px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+
+
+    .menu{
+        height: 100vh;
+        width: 60%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 25px 0 0 20px;
+        z-index: 100;
+    }
+        /* Style pour le menu caché */
+    #menu {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease; /* Transition pour un effet fluide */
+    }
+
+    /* Style pour le menu visible */
+    #menu.menu-active {
+        transform: translateX(0);
+    }
+    .box-menu{
+        position: absolute;
+        top: 70;
+        left: 0;
+        z-index: 90;
+        height: 94vh;
+        width: 100%;
+        background: #00000091;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.3s ease, opacity 0.3s ease;
+ 
+    }
+
+    .box-menu.box-active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+
+    .pop1-1{
+        display: none;
+        transition: .3s ease-in-out;
+    }
+
+    .pop1{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .bourse1, .bourse2{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 20px;  
+    }
+    .bourse-hors, .bourse-ci{
+        font-size: 12px;
+    }
+
+    .pop11, .pop12{
+        display: none;
+        padding-left: 15px;
+        transition: .3s ease-in-out;
+        color: #707880;
+    }
+    .pop11 a, .pop12 a{
+        display: block;
+        margin:  15px 0;
+        color: #707880;
+        font-size: 12px;
+        transition: .3s ease-in-out;
+    }
+    .pop11 a:hover, .pop12 a:hover{
+        color: #551A8B;
+    }
+
+    .fa-solid {
+        font-size: 10px;
+    }
+    .pop1-1.fa-solid {
+        font-size: 10px;
+    }
+
+
+
+
+
+
+    .cont{
+        display: none;
+    }
+    .pop2-2{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;  
+        padding-left: 20px; 
+    }
+    .bours1, .bours2, .bours3{
+        color: #707880;
+        font-size: 12px;
+
+    }
+    .bours1:hover, .bours2:hover, .bours3:hover{
+        color: #551A8B;
+    }
+    .pop22 {
+        display:none ;
+        padding: 10px 0 0 20px;
+    }
+    .pop22 a{
+        display:block ;
+        font-size: 12px;
+        color: #707880;
+        margin: 10px 0;
+        transition: .3s ease-in-out;
+    }
+    .pop22 a:hover{
+        color: #551A8B;
+    }
+
+    .pop23 {
+        display: none;
+        padding: 10px 0 0 20px;
+    }
+    .pop23 a{
+        display:block ;
+        font-size: 12px;
+        color: #707880;
+        margin: 10px 0;
+        transition: .3s ease-in-out;
+    }
+    .pop23 a:hover{
+        color: #551A8B;
+    }
+    
+
+
+    .pop24 {
+        display: none;
+        padding: 10px 0 0 20px;
+    }
+    .pop24 a{
+        display:block ;
+        font-size: 12px;
+        color: #707880;
+        margin: 10px 0;
+        transition: .3s ease-in-out;
+    }
+    .pop24 a:hover{
+        color: #551A8B;
+    }
+
 }
