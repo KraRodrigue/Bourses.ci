@@ -37,6 +37,13 @@ nav{
 .logo i{
     display: none;
 }
+
+.logo i:hover{
+    color: #e4ebec;
+}
+.icon span i:hover{
+    color: #f7f8f8;
+}
 .nvt img{
     width: 30px;
 }
